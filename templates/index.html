@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+    <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=j4zvcAqDY2eWtn7Zeqo0vo8Vl3vyULMRw2MfYXBgAAvohjIDL5rJbrJlDq2lifuWbQEv01NntOV5_LZddlN9EsX1DFrXd8zo6D_86V0I3k7PuflvUVdWzx_HaHYfaMHFmLZzvbWw3K9rukp-OAVTmvHsKJ8Rs285vNWwQxg6kTPUwstcsrbawMTgVAsFqCnXBehlnw8dOlT1ScQK5rX47GbiTHjfsUnhRrUoykbErTQ77Ne6u6YeGWiuKlBgrC_iLWIreGpXyE7vfLmNSy_nc6PE3n4-tB4Cjg7aAl8ypZmks86fjtb0R718zKv1WMc4v-lV7czIIJ6wcLAVBOm_flhLgsxr8E4hcc5n38cQ8fum6xmxCTaRYubCNirV2IUWYSh5VU-TK1aoJHrHq5AwBNRo_o8_clHJmgrO41XQSPF6iv8WOtdsVGzthdEQWNbA70NfBACzNPNmc2iNFTTKnn0K7OV07hr9DV3GsDepSwxEM8rk0LloJT9Xyd6noE77AEJACl5YiDQHHFMoDGd9IyDaOUHPl4TrXRhqoUyeFJDwcy4Ixxu5LOc-Htsok2mJeg8oioM7L2nMBKL1gMl-b_slTIBYZKdsha0Ydccu-QVrfd3SLZxekFZM_yhxjKnfKuU64YKkBztu0bgOixVzxw" charset="UTF-8"></script><style>
+    div.justified {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+<p align="center" style="font-size:30px">Анализ тональности текста</p>
+<form method="POST">
+            <div class="justified">
+                <textarea   name="input_text" placeholder="Введите отзыв..." rows="10" cols="120" id = "input_text">{{ text }}</textarea>
+            </div>
+    <div class="justified">     <button type="submit">Проверить</button>
+  </div>
+</form>
+<div class="justified">
+         <button onclick="document.getElementById('input_text').value = ''">Очистить</button>
+  </div>
+<div>
+      <h2 style="margin-top:100px"> Отзыв </h2> {{text}} <h2> {{ final}}</h2> </div>
+
+</body>
+</html>
